@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+.toggle-button{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 33px;
+}
+.toggle-button input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-button .knob{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #888888;
+  transition: .2s;
+  border-radius: 16px;
+}
+.toggle-button .knob:before{
+  background-color: #ffffff;
+  color: #000000;
+  position: absolute;
+  content: 'play';
+  height: 25px;
+  width: 94px;
+  left: 4px;
+  bottom: 4px;
+  transition: .2s;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-button input:checked + .knob{
+  background-color: #76b176;
+}
+.toggle-button input:focus + .knob{
+  box-shadow: 0 0 1px #2196F3;
+}
+.toggle-button input:checked + .knob:before{
+  color: #000000;
+  content: 'solve';
+  background-color: #ffffff;
+  -webkit-transform: translateX(98px);
+  -ms-transform: translateX(98px);
+  transform: translateX(98px);
+}
+
+label {
+  margin: auto;
+}
+.app {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.mjav {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: -1px 3px 50px -4px #b7b7b7;
+  border-radius: 16px;
+  width: 70vw;
+  transition: .2s;
+}
+
+.mjav > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mjav > button {
+  width: 6em;
+  height: 1.5em;
+  font-family: "Hubballi", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: none;
+  transition: .2s;
+  border-radius: 4px;
+}
+
+.mjav > button:hover {
+  background-color: #adf321;
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  width: 200vw;
+  transition: .2s;
+  margin-top: 2em;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.solve {
+  width: 100vw;
+}
+
+.inner-solve {
+  width: 70%;
+  height: 40vh;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: -1px 3px 50px -4px #b7b7b7;
+
+}
+
+.inner-solve > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.inner-solve > ul {
+  font-size: 1.3em ;
+}
+
+span {
+  font-size: 1.4em;
+}
+
+.inner-solve > div > input {
+  width: 10em;
+  font-size: 1.2em;
+}
+
+.inner-solve > div > button {
+  width: 6em;
+  height: 1.5em;
+  font-family: "Hubballi", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: none;
+  transition: .2s;
+  border-radius: 4px;
+}
+
+.inner-solve > div > button:hover {
+  background-color: #2196F3;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Hubballi", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.solved {
+  box-shadow: -1px 3px 50px -4px #76b176;
+}
+
+#difficultyChanger {
+  display: flex;
+  flex-flow: row;
+  width: 8em;
+  justify-content: space-between;
+  align-items: center;
+}

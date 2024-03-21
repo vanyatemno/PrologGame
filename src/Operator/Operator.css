@@ -1,0 +1,36 @@
+.operator {
+    width: 56px;
+    height: 104px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.4em;
+}
+
+.minus {
+    width: 40px;
+    height: 8px;
+
+    position: absolute;
+}
+
+.plus {
+    width: 8px;
+    height: 40px;
+}
+
+.bar {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+
+}
+
+.bar:hover {
+    background-color: #76b176;
+}
+
+.checked {
+    background-color: #af76b1 !important;
+}

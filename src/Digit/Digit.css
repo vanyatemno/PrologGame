@@ -1,0 +1,25 @@
+.bar {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.bar:hover {
+    background-color: #76b176;
+}
+
+.checked {
+    background-color: #af76b1 !important;
+}
+
+.wrong-bar {
+    background-color: #ce5757 !important;
+}
+
+.digit {
+    margin: 0.4em;
+
+    display: grid;
+    grid-template-columns: 8px 40px 8px;
+    grid-template-rows: 8px 40px 8px 40px 8px;
+}
